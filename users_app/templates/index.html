@@ -17,6 +17,14 @@
                 <th>Email</th>
                 <th>Age</th>
             </tr>
+            {% for user in users %}
+            <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.age }}</td>
+            </tr>
+            {% endfor %}
         </table>
     </div>
     <div class="form_container">
